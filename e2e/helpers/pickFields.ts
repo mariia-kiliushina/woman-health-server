@@ -51,4 +51,19 @@ export const pickFields = {
     id,
     quantitativeValue
   `,
+  symptom: `
+    id
+    name
+  `,
+  periodIntensity: `
+    slug
+  `,
+  periodRecord: `
+    date
+    id
+    intensity
+    mood
+    symptoms { id, name }
+    user { id, password, username }
+  `,
 }
